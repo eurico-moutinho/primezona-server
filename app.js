@@ -15,6 +15,9 @@ app.use("/api", allRoutes);
 const prodRoutes = require("./routes/product.routes");
 app.use("/api", prodRoutes);
 
+const seedRoutes = require("./routes/seed.routes");
+app.use("/api/seed", seedRoutes);
+
 require("./error-handling")(app);
 
 module.exports = app;
