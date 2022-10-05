@@ -1,7 +1,7 @@
-
 const mongoose = require("mongoose");
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/primezona-server";
+const MONGO_URI =
+  process.env.MONGODB_URI || "mongodb://localhost/primezona-server";
 
 mongoose
   .connect(MONGO_URI)
